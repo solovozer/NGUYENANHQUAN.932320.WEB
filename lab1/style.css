@@ -1,0 +1,157 @@
+.lab-headfoot {
+    background-color: #008000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    font-size: 14px;
+    width: 100%;
+}
+header {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+h1 {
+    padding-top: 1rem;
+}
+
+h2 {
+    word-spacing: 5px;
+}
+
+h4 {
+    font-size: 17px;
+    margin-bottom: 0.6rem;
+}
+
+.lab-stylesheet {
+    font-size: 16px;
+    line-height: 1.7rem;
+}
+
+.lab-stylesheet s {
+    line-height: 3rem;
+}
+
+.lab-list ul {
+    margin-top: -20px;
+}
+
+.lab-list ul li:nth-child(2) {
+    letter-spacing: 5px;
+}
+
+.lab-list ul li {
+    line-height: 1.5rem;
+}
+
+
+.lab-content {
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15.5px;  
+    margin: -2.31rem 0 -0.98rem 0;
+    margin-left: 500px;
+    width: 500px;
+    height: 650px;
+    scale: 95%;
+    padding: 0 20px 0 20px;
+}
+
+.lab-link {
+    text-align: center; 
+    margin-top: 15px;
+}
+
+.lab-lower-block {
+    display: flex;
+}
+
+.lab-weird-square {
+    width: 100px; height: 100px;
+    border: 5px solid white;
+    border-radius: 20px 0px 20px 0px;
+    margin: 0 15px 20px 0;
+    float: left;
+    flex-shrink: 0;
+}
+
+.lab-flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+.lab-paragraph {
+    margin: 0;
+    margin-left: 10px;
+    text-align: left;
+}
+
+img {
+    margin-left: 216px;
+    margin-top: 10px;
+}
+
+.lab-matrix3x3 {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 30px 30px 30px;
+    gap: 3px;
+    margin-left: 100px;
+    border: 0.5px solid lightgray;
+    padding: 5px
+}
+
+.lab-matrix3x3 div {
+    border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+}
+
+.block1 {
+    grid-row: 1 / span 2;
+    background-color: #008000;
+    padding-top: 50px
+}
+
+.block2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.block3 {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.block4 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.block5 {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+.block6 {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.block7 {
+    grid-row: 3;
+    grid-column: 2 /span 2;
+    background-color: red;
+}
+

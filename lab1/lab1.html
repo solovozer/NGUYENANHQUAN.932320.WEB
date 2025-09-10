@@ -1,52 +1,59 @@
 <!DOCTYPE HTML>
 <head>
   <meta charset="UTF-8" lang="EN">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
   <title>Web lab1</title>
 </head>
-<header class="headfoot">  Hello, header </header> 
+<header class="lab-headfoot">  Hello, Header! </header> 
 <body>
-  <h1>Hello, content!</h1>
-  <div class="paragraph"> 
-    <div class="weird-square" ></div>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
-      took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
-      but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
-      with the release of Letraset sheets containing Lorem Ipum passages, and more recently with desktop publishing 
-      software like Aldus PageMaker including versions of Lorem Ipsum.
-    </p>
-    <a href="www.csd.tsu.ru">www.csd.tsu.ru</a>
-  </div>  
-  
-  <h1><span style="color:red">Here</span> is the list:</h2>
-  <ul>
-    <li>Value 0</li>
-    <li style="color:cyan">Value 1</li>
-    <li>Value 2</li>
-  d</ul>
-  
-  <h3>Here are some visual styles:</h3>
-    <i>Italic</i> </br>
-    <b>B</b>old </br>
-    <u>Underlined</u> </br>
-    </br>
-    <lt>Line through</lt> </br>
+  <div class="lab-content">
+    <h1>Hello, content!</h1>
+    <div class="lab-upper-block">
+      <div class="lab-weird-square" ></div>
+      <p class="lab-paragraph">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer 
+        took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, 
+        but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+        with the release of Letraset sheets containing Lorem Ipum passages, and more recently with desktop publishing 
+        software like Aldus PageMaker including versions of Lorem Ipsum.
+      </p>
+    </div>
+    <div class="lab-link">
+      <a href="https://www.csd.tsu.ru" style="color:red">www.csd.tsu.ru</a>    
+    </div>
+    <div class="lab-list">
+      <h2><span style="color:red">Here</span> is the list:</h2>
+      <ul>
+        <li>Value 1</li>
+        <li style="color:cyan">Value 2</li>
+        <li>Value 3</li>
+      </ul>
+    </div>
     
-  <div class="matrix3x3">
-    <div class="1">1</div>
-    <div class="2">2</div>
-    <div class="3">3</div>
-    <div class="4">4</div>
-    <div class="5">5</div>
-    <div class="6">6</div>
-    <div class="7">7</div>
+    <div class="lab-lower-block">
+      <div class="lab-stylesheet lab-flex1">
+        <h4>Here are some visual styles:</h4>
+        <i>Italic</i> </br>
+        <b>B</b>old </br>
+        <u>UnderLined</u> </br>
+        <s>Line through</s> </br>
+      </div>
+
+      <div class="lab-flex2"> 
+        <div class="lab-matrix3x3">
+          <div class="block1">1</div>
+          <div class="block2">2</div>
+          <div class="block3">3</div>
+          <div class="block4">4</div>
+          <div class="block5">5</div>
+          <div class="block6">6</div>
+          <div class="block7">7</div>
+        </div>
+        <img src="./static/images.png" alt="thumbs_up_button" width="20px" height="20px">
+      </div>
+    </div>
   </div>
-  
-  <img src="#" alt="thumbs_up_button" width="20px" height="20px" class="image">
 </body>
     
-<footer class="headfoot">
-  Hello, Footer!
-</footer>
+<footer class="lab-headfoot">  Hello, Footer! </footer>
