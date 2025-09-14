@@ -3,17 +3,13 @@
     color: white;
     width: 500px;
     min-width: 500px;
-    min-height: fit-content;
-    flex-shrink: 0;
 }
 
-p {
-    margin: 0;
-    font-size: small;
-}
-
-body {
+.content-container {
     display: flex;
     justify-content: center;
 }
 
+p {
+    margin: 0;
+}
