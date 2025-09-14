@@ -1,0 +1,43 @@
+.content-div {
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+}
+
+
+.blue-container {
+    background-color: aqua;
+    float: left;
+    width: 300px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+.yellow-container {
+    background-color: bisque;
+}
+
+
+
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

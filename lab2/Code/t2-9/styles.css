@@ -1,0 +1,51 @@
+.content-div {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+p {
+    margin : 0;
+}
+img {
+    float : right;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+}
+
+
+.blue-container {
+    background-color: blue;
+    color: white;
+    width: 500px;
+    min-width: 500px;
+    min-height: fit-content;
+}
+
+
+
+
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

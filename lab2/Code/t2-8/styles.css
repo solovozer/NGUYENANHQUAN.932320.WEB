@@ -1,0 +1,60 @@
+body {
+    font-size: small;
+}
+
+.content-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.white-container {
+    background-color: bisque;
+    height: 70px;
+}
+
+.blue-container {
+    background-color: aqua;
+    flex: 1;
+}
+
+.grey-container {
+    background-color: darkgray;
+    flex: 1;
+}
+
+footer {
+    background-color: limegreen;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+}
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

@@ -1,0 +1,43 @@
+body {
+    font-size: small;
+}
+ul {
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 10px 0 10px;
+}
+
+.inline-container {
+    background-color: aquamarine;
+    width: 150px;
+    height: 70px;
+}
+
+.yellow-container {
+    background-color: bisque;
+}
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

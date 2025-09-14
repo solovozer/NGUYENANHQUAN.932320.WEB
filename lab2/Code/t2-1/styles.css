@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
+}
+
+header {
+    height: 5rem;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #EAEAEA;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: yellow;
+}
+
+.content {
+    display: flex;
+    box-sizing: border-box;
+    scale: 100%;
+}
+
+.left-container {
+    position: relative;
+    width: 800px;
+    background-color: #C8FC98;
+}
+
+.right-container {
+    margin-left: 5px;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.red-i {
+    font-style: italic;
+    color: red;
+}
+
+
+

@@ -1,0 +1,55 @@
+header {
+    height: 5rem;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #EAEAEA;
+}
+
+.b {
+    font-weight: 700;
+}
+
+.red-i {
+    font-style: italic;
+    color: red;
+}
+
+body {
+    position: relative;
+}
+
+.content {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.green-container {
+    position: relative;
+    height: max-content;
+    width: 100%;
+    background-color: #C8FC98;
+    padding-left: 5px;
+}
+
+.white-container {
+    padding-left: 5px;
+}
+.yellow-container {
+    background-color: yellow;
+    padding-left: 5px;
+    width: 800px;
+}
+
+footer {
+    position: relative;
+    background-color: black;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    color: yellow;
+}
+

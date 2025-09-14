@@ -1,0 +1,79 @@
+body {
+    color: white;
+    font-size: x-small;
+}
+
+.static-div {
+    position: static;
+    background-color: blueviolet;
+    width: 80px;
+    height: 50px;
+}
+
+.relative-div-red {
+    position: relative;
+    background-color: red;
+    width: 80px;
+    height: 50px;
+}
+
+.relative-div-yellow {
+    position: relative;
+    background-color: rgb(253, 164, 31);
+    width: 80px;
+    height: 50px;
+    left: 20px;
+    top: -20px;
+}
+
+.relative-div-pink {
+    position: relative;
+    background-color: rgb(248, 112, 112);
+    width: 500px;
+    height: 300px;  
+}
+
+.absolute-div {
+    position: absolute;
+    background-color: indigo;
+    width: 50%;
+    height: 30%;
+    top: 40%;
+    right: 0;
+}
+
+
+.fixed-div {
+    position: fixed;
+    background-color: limegreen;
+    height: 4rem;
+    width: 4rem;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+
+
+
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

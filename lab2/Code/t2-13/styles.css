@@ -1,0 +1,61 @@
+body {
+    font-size: small;
+}
+
+p {
+    margin-top: 0;
+}
+
+img {
+    float: right;
+    width: 30vw;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+.grey-container p:nth-child(3) {
+    clear: both;
+}
+
+.white-container {
+    background-color: bisque;
+    height: 25%;
+    width: 30%;
+}
+
+.blue-container {
+    background-color: aqua;
+    display: flex;
+    border: 1px solid limegreen;
+}
+
+.grey-container {
+    background-color: #EAEAEA;
+    float: right;
+    min-width: 300px;
+    max-width: 1000px;
+}
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}

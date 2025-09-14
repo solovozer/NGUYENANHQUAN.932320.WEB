@@ -1,0 +1,49 @@
+body {
+    font-size: small;
+}
+
+
+.blue-container {
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 0.5%;
+    border: 1px solid limegreen;
+}
+
+.white-container {
+    background-color: bisque;
+    height: 25%;
+    width: 30%;
+}
+.grey-container {
+    background-color: #EAEAEA;
+    float: right;
+    width: 69%;
+    height: 100%;
+    min-width: 300px;
+}
+
+#used-colors {
+color : #C8FC98
+#EAEAEA
+#FFFF80
+#FDE95E
+red
+blue
+green
+blueviolet
+darkred
+peru
+forestgreen
+indianred
+indigo
+white
+aqua
+bisque
+darkgray
+limegreen
+aquamarine;
+}
