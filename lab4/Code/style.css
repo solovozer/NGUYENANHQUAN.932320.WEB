@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #507299;
+}
+
+footer {
+    background-color: #edeef0;
+    text-align: center;
+
+}
+
+
+.content-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-conainer {
+    background-color: #edeef0;
+    width : 120px;
+}
+
+
+
+
+
+
+
+#used-colors {
+    color:  #edeef0
+            green
+            #e1e5eb
+            #507299
+            #2e5473
+            #d0d0d0
+
+}
