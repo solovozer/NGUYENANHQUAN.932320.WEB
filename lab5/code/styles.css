@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 10px;
+    background-color: #B6F5F5;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid black;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    font-size: x-small;
+    box-sizing: border-box;
+}
+
+.desc-button {
+    justify-self: center;
+    width: fit-content;
+    align-self: center;
+    border: 0px;
+    padding: 3px;
+    font-size: x-small;
+    background: linear-gradient(180deg, limegreen, green);
+    color: white;
+}
+
+.popup-protection {
+    position: fixed;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    opacity: 0.7;
+    top : 0; 
+    left: 0;
+}
+
+.popup {
+    position: fixed;
+    display: none;
+    width: 300px;
+    padding: 10px;
+    background-color: yellow;
+    justify-self: center;
+    align-self: center;
+}
+
+h2 {
+    text-align: center;
+}
