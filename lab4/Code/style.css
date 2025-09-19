@@ -1,41 +1,131 @@
 body {
     display: flex;
     flex-direction: column;
+    font-size: x-small;
+    margin: 0;
+    background-color: #edeef0;
+    line-height: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    padding: 5px 20px 5px 20px;
+}
+
+a {
+    color: #2e5473;
+    text-decoration-line: none;
 }
 
 header {
     background-color: #507299;
+    display: flex;
 }
-
-footer {
-    background-color: #edeef0;
-    text-align: center;
-
-}
-
 
 .content-container {
     display: flex;
     flex-direction: row;
 }
 
-.menu-conainer {
-    background-color: #edeef0;
-    width : 120px;
+.menu-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    width: 40vw;
 }
 
+.post-container {
+    box-sizing: border-box;
+    justify-items: center;
+    width: 400px;
+}
 
+.fixed-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    right: 0;
+}
 
+footer {
+    background-color: white;
+    text-align: center;
+    color: #d0d0d0;
+}
 
+.post {
+    background-color: white;
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    text-align: justify;
+}
 
+.reaction {
+    color: #507299;
+    font-size: x-small;
+    display: flex;
+    justify-content: space-between;
+}
 
+img#logo {
+    padding: 5px 0 5px 15%;
+}
+
+img#cat {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.vip-header {
+    font-weight: 700;
+}
+
+.vip-container {
+    width: 80px;
+    background-color: white;
+    margin: 30px 0 0 150px;
+    padding: 10px 5px 10px 5px;
+}
+
+.vip-container p {
+    background-color: #e1e5eb;
+}
+
+.post::selection {
+    color: green;
+    background-color: #e1e5eb;
+}
+
+.menu-container ul li:hover {
+    background-color: #e1e5eb;
+}
+
+@media screen and (max-width: 400px) {
+    .content-container {
+        flex-direction: column;
+    }
+    .menu-container {
+        width: 100%;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
 
 #used-colors {
-    color:  #edeef0
-            green
-            #e1e5eb
-            #507299
-            #2e5473
-            #d0d0d0
-
+    color: #edeef0;
+    color: green;
+    color: #e1e5eb;
+    color: #507299;
+    color: #2e5473;
+    color: #d0d0d0;
 }
