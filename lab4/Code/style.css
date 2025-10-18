@@ -50,6 +50,11 @@ header {
     width: 600px;
     right: 0;
 }
+@media (max-width: 400px) {
+    .fixed-container {
+        display: none;
+    }
+}
 
 footer {
     background-color: white;
