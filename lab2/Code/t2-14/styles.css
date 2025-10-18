@@ -4,11 +4,13 @@ body {
 }
 
 ul {
+    padding: 0;
     padding-left: 25px;
+    margin: 0.5em;
 
 }
 
-ul li {
+li {
     display: list-item;
 }
 
