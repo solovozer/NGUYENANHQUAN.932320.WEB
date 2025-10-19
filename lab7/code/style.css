@@ -1,0 +1,16 @@
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding : 0;
+    padding-bottom: 5px;
+}
+
+li {
+    background-color: #EDEDED;
+    margin-right: 5px;
+}
+
+input {
+    width: 120px;
+}
