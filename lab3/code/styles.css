@@ -31,9 +31,8 @@ footer {
 ul {
     list-style: none;
     text-decoration: underline;
-    box-sizing: border-box;
     margin-top: 15px;
-    padding-left: 20px;
+    padding: 0 20px 0 35px;
     line-height: 1.5em;
 }
 
@@ -41,12 +40,13 @@ li {
     margin: 1em 0 1em 0;
 }
 
-::selection {
+li:hover {
     background-color: green;
 }
 
 p::selection {
     color: white;
+    background-color: green;
 }
 
 .wtf {
