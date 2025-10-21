@@ -12,8 +12,13 @@ ul {
     list-style: none;
 }
 
-ul li {
+li {
     padding: 5px 20px 5px 20px;
+}
+
+li:hover {
+    background-color: #507299;
+    
 }
 
 a {
