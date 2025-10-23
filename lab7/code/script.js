@@ -1,14 +1,17 @@
 function DrawShape(shape) {
     var size = parseInt(document.getElementById("1").value);
     for (let i = size; i > 0; i--) {
+        let temp;
         if (shape == 'square') {
-        document.body.appendChild(MakeSquare());
+            temp = MakeSquare();
         }
         if (shape == 'circle') {
-            document.body.appendChild(MakeCircle());
+            temp = MakeCircle();
         }
         if (shape == 'triangle') {
-            document.body.appendChild(MakeTriangle());
+            temp = MakeTriangle();
         }
+        temp.style.opacity = "0.7";
+        document.body.append(temp);
     }
 }
