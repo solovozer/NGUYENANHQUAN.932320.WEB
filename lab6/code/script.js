@@ -3,7 +3,7 @@ var cats = document.getElementById('c-c').style;
 var cp = document.getElementById("c-c").getElementsByTagName("img")[0].style;
 var dp = document.getElementById('d-c').getElementsByTagName("img")[0].style;
 
-function doShit(kw) {
+function doStuff(kw) {
     if (kw === "cats") {
         cats.width = "96%";
         dogs.width = "10%";
