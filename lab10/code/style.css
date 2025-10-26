@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+#curtain {
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    transition: transform 0.6s ease;
+}
+
+#curtain:hover {
+    transform: translateY(-10%);
+}
+
+#curtain.up {
+    transform: translateY(-100vh);
+}
+
+#curtain, #behind {
+    position: fixed;
+}
+
+#behind {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#light {
+    z-index: 6;
+    position: absolute;
+    top: 9.1%;
+    background-color: yellow;
+    opacity: 0.5;
+    width: 750px;
+    height: 500px;
+    pointer-events: none;
+    clip-path: polygon(46% 0%, 52.4% 0%, 100% 100%, 0% 100% );
+}
+
+.shone {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.3s;
+}
+
+
+#shone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 70px;
+    padding-top: 100px;
+    padding-left: 30%;
+}
+
+#lamp {
+    display: flex;
+    width: 200px;
+    height: 200px;
+}
+
+#vrap {
+    position: absolute;
+    width: 15%;
+}
+
+#hcao {
+    position: absolute;
+    z-index: 4;
+    width: 0.5%;
+    height: 7%;
+    left: 47.9%;    
+    top: 9.4%;;
+    transition: height 0.5s ease;
+}
+
+@keyframes giat {
+    0% { height: 7%; }
+    40% { height: 9.5%; }
+    100% { height: 7%; }
+}
+
+#hcao.giatday {
+    animation: giat 0.5s ease-out;
+}
+
+
+#witch {
+    width: 30%;
+    z-index: 5;
+}
+
+#hat {
+    width: 18%;
+    transform: scaleY(-1);
+    z-index: 5;
+}
+
+#bird {
+    position: absolute;
+    width: 5%;
+    left: 55%;
+    z-index: 4;
+    transition-duration: 0.4s;
+}
+
+#rabbit {
+    position: absolute;
+    width: 5%;
+    left: 55%;
+    bottom: 30%;
+    z-index: 4;
+    transition-duration: 0.4s;  
+}
+
+#rabbit.jump {
+    animation: run-away 0.4s ease-in-out;
+}
+
+@keyframes run-away {
+    0% {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+    20% {
+        transform: translate(120px, -31.4px);
+        opacity: 0.9;
+    }
+    40% {
+        transform: translate(240px, -58px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(300px, -62.8px);
+        opacity: 0.8;
+    }
+    60% {
+        transform: translate(360px, -58px);
+        opacity: 0.6;
+    }
+    80% {
+        transform: translate(480px, -31.4px);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translate(600px, 0px);
+        opacity: 0.2;
+    }
+}
+
+
+
