@@ -1,0 +1,17 @@
+﻿@page "/CalcService/PassUsingModel"
+@model WebApplication1.Pages.CalcService.CalculationModel
+@{
+	ViewData["Title"] = "PassUsingModel";
+	<p class="fw-bold">
+		Rand Value First: @Model.num1 <br />
+		Rand Value Second: @Model.num2 <br />
+		Add: <br />
+		<span class="fw-normal">@Model.num1 + @Model.num2 = @Model.sum </span>	<br />
+		Sub: <br />
+		<span class="fw-normal">@Model.num1 - @Model.num2 = @Model.difference </span>	<br />
+		Mult: <br />
+		<span class="fw-normal">@Model.num1 * @Model.num2 = @Model.product </span>	<br />
+		Div: <br />
+		<span class="fw-normal">@Model.num1 / @Model.num2 = @Model.quotient </span> <br />
+	</p>
+}

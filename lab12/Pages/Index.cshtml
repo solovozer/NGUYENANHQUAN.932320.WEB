@@ -1,0 +1,22 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Form parameters parsing demo</h1>
+<ul class="m-3">
+    <li>
+        <a class="text-decoration-none" asp-page="Calc/Manual">Manual parsing in single action</a>
+    </li>
+    <li>
+        <a class="text-decoration-none" asp-page="Calc/ManualWithSeparateHandlers">Manual parsing in separate actions</a>
+    </li>
+    <li>
+        <a class="text-decoration-none" asp-page="Calc/ModelBindingInParameters">Model binding (parameters)</a>
+    </li>
+    <li>
+        <a class="text-decoration-none" asp-page="Calc/ModelBindingInSeparateModels">Model binding (separate model)</a>
+    </li>
+
+</ul>

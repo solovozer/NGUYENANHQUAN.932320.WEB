@@ -1,0 +1,34 @@
+﻿@page "/Calc/ModelBindingInSeparateModels"
+@model lab12.Pages.Calc.ModelBindingInSeparateModelsModel
+@{
+	ViewData["Title"] = "ModelBindingInSeparateModels";
+	@if (!Model.hasResult)
+	{
+		<h1>Manual</h1>
+		<form method="post">
+			<input type="number" name="num1" min="0" max="10" required />
+			<br>
+			<select name="op">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<br>
+			<input type="number" name="num2" min="0" max="10" required />
+			<br>
+			<button type="submit">Submit</button>
+		</form>
+	}
+
+	@if (ViewData["DivideByZero"] != null)
+	{
+		<p>Error: Divide by 0</p>
+	}
+
+	@if (Model.Result != 0 && Model.hasResult == true)
+	{
+		<h1>Result </h1>
+		<span> @Model.Num1 + @Model.Num2 = @Model.Result; </span>
+	};
+}

@@ -1,0 +1,130 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\calcservice\\accessservicedirectly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\calcservice\\accessservicedirectly.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\calcservice\\passusingviewdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\calcservice\\passusingviewdata.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\calcservice\\passusingviewbag.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\calcservice\\passusingviewbag.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\calcservice\\passusingviewbag.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\calcservice\\passusingviewbag.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab11\\webapplication1\\pages\\calcservice\\passusingmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED6079FA-8204-4555-B28C-2A208F0B820A}|WebApplication1.csproj|solutionrelative:pages\\calcservice\\passusingmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 481,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PassUsingModel.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingModel.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\CalcService\\PassUsingModel.cshtml.cs",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingModel.cshtml.cs",
+              "RelativeToolTip": "Pages\\CalcService\\PassUsingModel.cshtml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:04:05.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PassUsingViewData.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewData.cshtml",
+              "RelativeDocumentMoniker": "Pages\\CalcService\\PassUsingViewData.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewData.cshtml",
+              "RelativeToolTip": "Pages\\CalcService\\PassUsingViewData.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T15:02:58.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PassUsingViewBag.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewBag.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\CalcService\\PassUsingViewBag.cshtml.cs",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewBag.cshtml.cs",
+              "RelativeToolTip": "Pages\\CalcService\\PassUsingViewBag.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:02:46.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PassUsingViewBag.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewBag.cshtml",
+              "RelativeDocumentMoniker": "Pages\\CalcService\\PassUsingViewBag.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\PassUsingViewBag.cshtml",
+              "RelativeToolTip": "Pages\\CalcService\\PassUsingViewBag.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T15:02:19.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccessServiceDirectly.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\AccessServiceDirectly.cshtml",
+              "RelativeDocumentMoniker": "Pages\\CalcService\\AccessServiceDirectly.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\CalcService\\AccessServiceDirectly.cshtml",
+              "RelativeToolTip": "Pages\\CalcService\\AccessServiceDirectly.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T15:01:29.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab11\\WebApplication1\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T14:53:46.239Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

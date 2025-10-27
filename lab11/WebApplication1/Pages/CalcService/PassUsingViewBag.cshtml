@@ -1,0 +1,18 @@
+﻿@page "/CalcService/PassUsingViewBag"
+@model WebApplication1.Pages.CalcService.PassUsingViewBagModel
+@{
+	ViewData["Title"] = "PassUsingViewBag";
+	<h1 class="">PassUsingViewBag</h1>
+	<p class="fw-bold">
+		Rand Value First: @ViewData["Num1"] <br />
+		Rand Value Second: @ViewData["Num2"] <br />
+		Add: <br />
+		<span class="fw-normal">@ViewData["Num1"] + @ViewData["Num2"] = @ViewData["Sum"] </span>	<br />
+		Sub: <br />
+		<span class="fw-normal">@ViewData["Num1"] - @ViewData["Num2"] = @ViewData["Difference"] </span>	<br />
+		Mult: <br />
+		<span class="fw-normal">@ViewData["Num1"] * @ViewData["Num2"] = @ViewData["Product"] </span>	<br />
+		Div: <br />
+		<span class="fw-normal">@ViewData["Num1"] / @ViewData["Num2"] = @ViewData["Quotient"] </span> <br />
+	</p>
+}
