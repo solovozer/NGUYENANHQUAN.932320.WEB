@@ -15,3 +15,4 @@ function DrawShape(shape) {
         document.body.append(temp);
     }
 }
+
