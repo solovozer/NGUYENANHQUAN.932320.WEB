@@ -1,0 +1,12 @@
+﻿@page "/Mockups/Quiz"
+@model lab13.Pages.Mockups.QuizModel
+@{
+	<h1>Quiz</h1>
+	<p>1 + 3 = </p>
+	<input type="number" asp-for="Answer"/>
+	<div class="flex-row">
+		<button type="button" name="next">Next</button>
+		<button type="submit" name="finish" class="bg-primary">Finish</button>
+	</div>
+	
+}

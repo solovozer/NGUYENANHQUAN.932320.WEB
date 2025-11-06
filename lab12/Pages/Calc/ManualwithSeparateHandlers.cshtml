@@ -19,15 +19,4 @@
 			<button type="submit">Submit</button>
 		</form>
 	}
-
-	@if (ViewData["DivideByZero"] != null)
-	{
-		<p>Error: Divide by 0</p>
-	}
-
-	@if (Model.Result != 0 && Model.hasResult == true)
-	{
-		<h1>Result </h1>
-		<span> @Model.Num1 + @Model.Num2 = @Model.Result; </span>
-	}
 }
