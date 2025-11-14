@@ -12,6 +12,15 @@ namespace WebApplication1.Pages.CalcService
         public int difference { get; set; }
         public int product { get; set; }
         public int quotient { get; set; }
+
+        public CalculationModel(int n1, int n2)         {
+            num1 = n1;
+            num2 = n2;
+            sum = num1 + num2;
+            difference = num1 - num2;
+            product = num1 * num2;
+            quotient = num2 != 0 ? num1 / num2 : 0;
+        }
     }
     public class PassUsingModelModel : PageModel
     {
@@ -19,11 +28,7 @@ namespace WebApplication1.Pages.CalcService
         public CalculationModel calculation {  get; set; }
         public void OnGet()
         {
-            calculation = new CalculationModel
-            {
-                num1 = random.Next(1, 10),
-                num2 = random.Next(1, 10)
-            };
+            calculation = new CalculationModel(random.Next(1, 10), random.Next(1, 10));
         }
     }
 }
