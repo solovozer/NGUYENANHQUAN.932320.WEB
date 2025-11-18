@@ -55,8 +55,6 @@ namespace lab13.Pages.Mockups
         {
 
 
-            CurrentQuestion.UserAnswer = Answer;
-            return Redirect("");
         }
     }
 }
