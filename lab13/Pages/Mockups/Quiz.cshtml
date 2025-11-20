@@ -1,12 +1,41 @@
 ﻿@page "/Mockups/Quiz"
 @model lab13.Pages.Mockups.QuizModel
 @{
-	<h1>Quiz</h1>
-	<p>1 + 3 = </p>
-	<input type="number" asp-for="Answer"/>
-	<div class="flex-row">
-		<button type="button" name="next">Next</button>
-		<button type="submit" name="finish" class="bg-primary">Finish</button>
-	</div>
-	
+    ViewData["Title"] = "Hello Quiz";
+}
+
+@if (Model.CurrState.ShowQuiz)
+{
+    <form method="post">
+        <h1>Quiz</h1>
+        <p>@Model.CurrState.CurrentQuestion.Num1 @Model.CurrState.CurrentQuestion.ToSign() @Model.CurrState.CurrentQuestion.Num2 =</p>
+        <input type="number" asp-for="Answer" value="" placeholder=@Model.CurrState.CurrentQuestion.RightAnswer />
+
+        <div class="flex-row">
+            <button type="submit" name="action" value="next">Next</button>
+            <button type="submit" name="action" value="finish" class="bg-primary">Finish</button>
+        </div>
+
+        @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+        {
+            <br>
+            <p class="error">@Model.ErrorMessage</p>
+        }
+    </form>
+}
+
+@if (!Model.CurrState.ShowQuiz)
+{
+    <h1>Quiz Results</h1>
+    <h3>Right answers @Model.CurrState.RightAns out of @Model.CurrState.TotalAns</h3>
+    <ul>
+        @{
+            int i = 1;
+        }
+        @foreach (var ans in Model.CurrState.Questions)
+        {
+            <li> @i. @ans.Num1 @ans.ToSign() @ans.Num2 = @ans.RightAnswer </li>
+            i++;
+        }
+    </ul>
 }

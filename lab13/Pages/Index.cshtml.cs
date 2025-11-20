@@ -12,9 +12,11 @@ namespace lab13.Pages
             _logger = logger;
         }
 
-        public void OnGet()
+        public IActionResult OnPost()
         {
-
+            var action = Request.Form["showQuiz"];
+            if (!string.IsNullOrEmpty(action)) TempData["showQuiz"] = action == "true";
+            return RedirectToPage("Quiz");
         }
     }
 }

@@ -1,111 +1,261 @@
-﻿using System;
+﻿    using System;
+    using System.Collections.Generic;
+    using System.Linq;
 
-namespace csharp
-{
-    public class Fingerprint
+    namespace csharp
     {
-        public List<Double> features;
-
-        public Fingerprint(List<Double> features)
+        public class Fingerprint
         {
-            this.features = features;
-        }
-    }
+            public List<double> Features { get; }
 
-    public class User
-    {
-        private string userID;
-        private string name;
-        private string role;
-        private Fingerprint userfp;
-       
-        User(string userID, string name, string role, Fingerprint userfp)
-        {
-            this.userID = userID;
-            this.name = name;
-            this.role = role;
-            this.userfp = userfp;
-        }  
-        public Fingerprint GetFingerprint() { return  this.userfp; }
-    }
-
-    public class Database
-    {
-        public List<User> users;
-        static readonly Double THRESH_HOLD = 0.99;
-        public Database(List<User> users) { this.users = users; }
-
-        public Double CompareFingerprints(Fingerprint fp1, Fingerprint fp2)
-        {
-            Double res = 0;
-            for (int i = 0; i < Math.Max(fp1.features.Count(), fp2.features.Count()); i++)
+            public Fingerprint(List<double> features)
             {
-                Double num1 = 0, num2 = 0;
-                if (i < fp1.features.Count()) num1 = fp1.features[i];
-                if (i < fp2.features.Count()) num2 = fp2.features[i];
-                res += Math.Pow((num1 - num2), 2);
+                Features = features;
             }
-            return res;
         }
-        public bool Search(Fingerprint fp)
+        public class User
         {
-            foreach (User user in users)
+            private string userID;
+            private string name;
+            private string role;
+            private Fingerprint userfp;
+
+            public string GetID() => userID;
+            public string GetName() => name;
+            public string GetRole() => role;
+            public Fingerprint GetFingerprint() => userfp;
+
+            public User(string userID, string name, string role, Fingerprint userfp)
             {
-                Fingerprint userfp = user.GetFingerprint();
-                Double evaluation = CompareFingerprints(userfp, fp);
-                if (evaluation >= THRESH_HOLD) return true;
+                this.userID = userID;
+                this.name = name;
+                this.role = role;
+                this.userfp = userfp;
             }
-            return false;
-        }
-    }
 
-    public class FingerprintMachine
-    {
-        public bool isTouched = false;
-        public void CheckTouched() { 
-            if (true) isTouched = true; 
-            else isTouched = false}
-        public Fingerprint GetFingerprint() { return new Fingerprint(new List<Double>()); }
-        public void OpenDoor(bool valid) { }
-    }
-
-    public class Security
-    {
-        public required List<FingerprintMachine> entrances;
-
-        public void ForceOpenDoor(FingerprintMachine fm)
-        {
-            fm.OpenDoor(true);
-        }
-    }
-
-    public class FingerController
-    {
-        Database db;
-        FingerprintMachine fm;
-        
-        FingerController(Database db, FingerprintMachine fm)
-        {
-            this.db = db;
-            this.fm = fm;
-        }
-        
-        void Proceed()
-        {
-            while(!fm.isTouched)
+            public User(User user)
             {
-                if (fm.isTouched)
+                this.userID = user.userID;
+                this.name = user.name;
+                this.role = user.role;
+                this.userfp = user.userfp;
+            }
+        }
+
+        public class Security : User
+        {
+            private List<FingerprintMachine> entrances;
+            private LogsController logs;
+
+            public Security(string userID, string name, string role, Fingerprint userfp, List<FingerprintMachine> entrances, LogsController logs)
+                : base(userID, name, role, userfp)
+            {
+                this.entrances = entrances;
+                this.logs = logs;
+            }
+
+            public void ForceOpenDoor(FingerprintMachine fm)
+            {
+                if (entrances.Contains(fm))
                 {
-                    Fingerprint receivedfp = fm.GetFingerprint();
-                    if (receivedfp != null)
+                    Console.WriteLine($"Security {GetName()} is forcing door open...");
+                    fm.OpenDoor(true);
+                    logs.AddEntry(new LogEntry(DateTime.Now.ToString(), this, fm));
+                }
+                else
+                {
+                    Console.WriteLine($"Security {GetName()} cannot open this entrance.");
+                }
+            }
+        }
+
+        public class Admin : User
+        {
+            FingerController fc;
+
+            public Admin(string userID, string name, string role, Fingerprint userfp, FingerController fc)
+                        : base(userID, name, role, userfp)
+            {
+                this.fc = fc;
+            }
+            public string GetLog()
+            {
+                return fc.PrintLog(0);
+            }
+            public string GetNLatestLogEntries(int n)
+            {
+                return fc.PrintLog(n);
+            }
+        }
+
+        public class Database
+        {
+            private List<User> users;
+            private const double THRESH_HOLD = 0.99;
+
+            public Database(List<User> users)
+            {
+                this.users = users;
+            }
+
+            public double CompareFingerprints(Fingerprint fp1, Fingerprint fp2)
+            {
+                double res = 0;
+                int size = Math.Max(fp1.Features.Count, fp2.Features.Count);
+
+                for (int i = 0; i < size; i++)
+                {
+                    double num1 = i < fp1.Features.Count ? fp1.Features[i] : 0;
+                    double num2 = i < fp2.Features.Count ? fp2.Features[i] : 0;
+                    res += Math.Pow(num1 - num2, 2);
+                }
+                return 1.0 - (res / size); 
+            }
+
+            public User Search(Fingerprint fp)
+            {
+                foreach (User user in users)
+                {
+                    double evaluation = CompareFingerprints(user.GetFingerprint(), fp);
+                    if (evaluation >= THRESH_HOLD)
+                        return new User(user);
+                }
+                return null;
+            }
+        }
+
+        public class FingerprintMachine
+        {
+            static int ID_counter = 0;
+            private readonly string ID;
+
+            private bool isTouched = false;
+            public bool IsTouched() => isTouched;
+
+            public string GetID() { return ID; }
+            FingerprintMachine()
+            {
+                ID = ID_counter.ToString();
+                ID_counter++;
+            }
+            private void Reset()
+            {
+                isTouched = false;
+            }
+
+            public Fingerprint GetFingerprint()
+            {
+                return new Fingerprint(new List<double> { 0.12, 0.45, 0.33, 0.91 });
+            }
+
+            public bool OpenDoor(bool valid)
+            {
+                if (valid)
+                {
+                    Console.WriteLine("Door opened.");
+                    Reset();
+                    return true;
+                }
+                else
+                {
+                    Console.WriteLine("Access denied.");
+                    return false;
+                }
+            }
+        }
+
+        public class LogEntry
+        {
+            private string dateTime;
+            private User user;
+            private FingerprintMachine entrance;
+
+            public LogEntry(string dateTime, User user, FingerprintMachine entrance)
+            {
+                this.dateTime = dateTime;
+                this.user = user;
+                this.entrance = entrance;
+            }
+
+            public bool Valid()
+            {
+                return user != null && user.GetID() != null;
+            }
+
+            public string Print()
+            {
+                return $"DateTime: {dateTime} | User: {user.GetID()} | Name: {user.GetName()} | Entrance: {entrance.GetID()}\n";
+            }
+        }
+
+        public class LogsController
+        {
+            private List<LogEntry> logEntries = new List<LogEntry>();
+
+            public bool AddEntry(LogEntry entry)
+            {
+                if (entry.Valid())
+                {
+                    logEntries.Add(entry);
+                    return true;
+                }
+                return false;
+            }
+
+            public string Print(int n)
+            {
+                if (n <= 0) return PrintAll();
+                return string.Join("", logEntries.TakeLast(n).Select(e => e.Print()));
+            }
+
+            public string PrintAll()
+            {
+                return string.Join("", logEntries.Select(e => e.Print()));
+            }
+        }
+
+        public class FingerController
+        {
+            private readonly Database db;
+            private readonly List<FingerprintMachine> fms;
+            private readonly LogsController logs;
+
+            public FingerController(Database db, List<FingerprintMachine> fms, LogsController logs)
+            {
+                this.fms= fms;
+                this.db = db;
+                this.logs = logs;
+            }
+
+            public void Proceed()
+            {
+                foreach (FingerprintMachine fm in fms)
+                {
+                    if (fm.IsTouched())
                     {
-                        bool found = db.Search(receivedfp);
-                        if (found) fm.OpenDoor(true);
-                        else fm.OpenDoor(false);
+                        Fingerprint receivedfp = fm.GetFingerprint();
+                        if (receivedfp != null)
+                        {
+                            User user = db.Search(receivedfp);
+                            bool valid = user != null;
+                            fm.OpenDoor(valid);
+                            if (user != null) logs.AddEntry(new LogEntry(DateTime.Now.ToString(), user, fm));
+                        }
                     }
                 }
-                fm.isTouched = false;
+            }
+
+            public string PrintLog(int lines)
+            {
+                return logs.Print(lines);
+            }
+        }
+
+        public class Program
+        {
+            public static void Main()
+            {
+           
             }
         }
     }
-}

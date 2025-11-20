@@ -1,4 +1,6 @@
 using lab13.Pages.Mockups;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Sqlite;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDistributedMemoryCache();
@@ -22,6 +24,16 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseSession();
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path == "/")
+    {
+        context.Response.Redirect("/Mockups");
+        return;
+    }
+    await next();
+});
 
 app.UseAuthorization();
 

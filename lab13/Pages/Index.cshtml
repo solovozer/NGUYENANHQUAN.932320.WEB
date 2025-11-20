@@ -1,11 +1,23 @@
-﻿@page
+﻿@page "/Mockups"
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Hello Mockups";
 }
 
 <h1>Mockups</h1>
 <ul>
-    <li><a asp-page="/Mockups/Quiz" class="">Quiz</a></li>
-    <li><a asp-page="/Mockups/QuizResult" class="">QuizResult</a></li>
+    <li><a asp-page="/Mockups/Quiz" onclick="postShow(true)">Quiz</a></li>
+    <li><a asp-page="/Mockups/Quiz" onclick="postShow(false)">QuizResult</a></li>
 </ul>
+
+<form id="from" method="post" style="display:none">
+    <input type="hidden" id="showQuiz" value="" />
+</form>
+
+
+<script>
+    function postShow(value) {
+        document.getElementById("showQuiz").value = value ? "true" : "false";
+        document.getElementById("from").submit();
+    }
+</script>
