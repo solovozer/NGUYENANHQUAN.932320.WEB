@@ -1,4 +1,11 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\lab13",
+    "\\lab13\\code",
+    "\\lab13\\code\\Lab13",
+    "\\lab13\\code\\Lab13\\Models"
+  ],
+  "SelectedNode": "\\lab13\\code\\Lab13\\Models\\AnswersModel.cs",
   "PreviewInSolutionExplorer": false
 }

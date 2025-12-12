@@ -3,8 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\modelbindinginparameters.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\modelbindinginparameters.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\manualwithseparatehandlers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\manualwithseparatehandlers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\manualwithseparatehandlers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\manualwithseparatehandlers.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\modelbindinginseparatemodels.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,24 +35,8 @@
       "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\modelbindinginseparatemodels.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\manualwithseparatehandlers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\manualwithseparatehandlers.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\manual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\manual.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\calc\\modelbindinginparameters.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\calc\\modelbindinginparameters.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|c:\\users\\dell\\onedrive\\documents\\tgu\\year 3\\web\\lab\\nguyenanhquan.932320\\lab12\\pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{366B4A93-AB7A-4870-98BF-0DF4A46C33F5}|lab12.csproj|solutionrelative:pages\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 704,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ModelBindingInSeparateModels.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
-              "RelativeDocumentMoniker": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
-              "RelativeToolTip": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA2wBwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T15:50:34.56Z",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwC8AAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-12T12:26:45.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ManualwithSeparateHandlers.cshtml",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ManualwithSeparateHandlers.cshtml",
               "RelativeDocumentMoniker": "Pages\\Calc\\ManualwithSeparateHandlers.cshtml",
@@ -80,7 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "ModelBindingInParameters.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInParameters.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Calc\\ModelBindingInParameters.cshtml.cs",
@@ -88,11 +92,12 @@
               "RelativeToolTip": "Pages\\Calc\\ModelBindingInParameters.cshtml.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T21:35:25.653Z"
+              "WhenOpened": "2025-10-27T21:35:25.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "_ViewStart.cshtml",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\_ViewStart.cshtml",
               "RelativeDocumentMoniker": "Pages\\_ViewStart.cshtml",
@@ -100,11 +105,12 @@
               "RelativeToolTip": "Pages\\_ViewStart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-27T21:32:17.018Z"
+              "WhenOpened": "2025-10-27T21:32:17.018Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ManualwithSeparateHandlers.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ManualwithSeparateHandlers.cshtml.cs",
               "RelativeDocumentMoniker": "Pages\\Calc\\ManualwithSeparateHandlers.cshtml.cs",
@@ -117,7 +123,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-27T14:51:58.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ModelBindingInSeparateModels.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
+              "RelativeDocumentMoniker": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
+              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
+              "RelativeToolTip": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA2wBwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T15:50:34.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ModelBindingInSeparateModels.cshtml",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\ModelBindingInSeparateModels.cshtml",
               "RelativeDocumentMoniker": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml",
@@ -125,12 +156,11 @@
               "RelativeToolTip": "Pages\\Calc\\ModelBindingInSeparateModels.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-27T21:02:28.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T21:02:28.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Manual.cshtml",
               "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Calc\\Manual.cshtml",
               "RelativeDocumentMoniker": "Pages\\Calc\\Manual.cshtml",
@@ -138,21 +168,7 @@
               "RelativeToolTip": "Pages\\Calc\\Manual.cshtml",
               "ViewState": "AgIAAAoAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-27T20:31:13.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab12\\Pages\\Index.cshtml",
-              "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-27T14:51:58.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T20:31:13.824Z"
             }
           ]
         }
