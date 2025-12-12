@@ -1,0 +1,16 @@
+﻿@page
+@model lab13.Pages.Mockups.QuizResultModel
+@{
+	ViewData["Title"] = "Hello Quiz";
+}
+
+<h1>Quiz results</h1>
+<br />
+<h3>Score: @Model.CountCorrect / @Model.CountAll correct</h3>
+
+@foreach (var (q, a) in Model.QuizQuestions.Zip(Model.UserAns))
+{
+    <span style="margin-left: 20px;">
+        @q.ID.&nbsp;&nbsp;@q.Num1 @q.ToChar() @q.Num2 = @a <br>
+    </span>
+}

@@ -1,0 +1,28 @@
+﻿@page
+@model lab13.Pages.Mockups.QuizModel
+@{
+    ViewData["Title"] = "Hello Quiz";
+    var x = Model.quiz;
+}
+
+<h1>Quiz</h1>
+<form method="post">
+    @if (@x != null)
+    {
+        <span class="fw-bold">@x.Num1 @x.ToChar() @x.Num2 =</span> <br>
+    }
+    else
+    {
+        <p>Quiz not available.</p>
+    }
+
+    <input asp-for="UserAns" class="text-start" placeholder="@x.RightAnswer"> <br> <br>
+    <button type="submit" name="action" value="next" class="btn btn-outline-secondary">Next</button>
+    <button type="submit" name="action" value="finish" class="btn btn-primary">Finish</button>
+    <span asp-validation-for="UserAns" class="text-danger"></span>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
