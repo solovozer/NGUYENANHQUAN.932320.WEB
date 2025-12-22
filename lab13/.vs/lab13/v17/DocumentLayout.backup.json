@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 341,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -63,6 +63,14 @@
               "IsPinned": true
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
@@ -70,10 +78,9 @@
               "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab13\\Pages\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA4AAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T18:20:11.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T18:20:11.844Z"
             },
             {
               "$type": "Document",
@@ -83,18 +90,10 @@
               "RelativeDocumentMoniker": "Pages\\Index.cshtml",
               "ToolTip": "C:\\Users\\Dell\\OneDrive\\Documents\\TGU\\Year 3\\Web\\Lab\\NGUYENANHQUAN.932320\\lab13\\Pages\\Index.cshtml",
               "RelativeToolTip": "Pages\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-12-12T18:20:10.183Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -106,8 +105,7 @@
               "RelativeToolTip": "Pages\\Mockups\\QuizResult.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-12T17:35:50.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T17:35:50.873Z"
             },
             {
               "$type": "Document",
@@ -119,8 +117,7 @@
               "RelativeToolTip": "Pages\\Mockups\\QuizResult.cshtml.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAuwA0AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-12T15:48:31.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-12T15:48:31.933Z"
             }
           ]
         }
