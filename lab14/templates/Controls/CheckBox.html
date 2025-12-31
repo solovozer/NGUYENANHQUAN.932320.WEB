@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}CheckBox{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Check Box</h1>
+        <div class="flex-col">
+            <form id="input">
+                {{form.hidden_tag()}}
+                {{form.IsSelected(id="IsSelected", class="")}}
+                {{form.IsSelected.label}}<br>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="flex-row gap-s center-self-h">
+                <span id="label" class="bold">IsSelected</span>  
+                <span id="output" ></span>
+            </div>
+        </div>
+        <script>
+            document.getElementById("label").style.display = 'none'
+            document.getElementById("input").onsubmit = async (e) => {
+                e.preventDefault()
+                const formData = new FormData(e.target);
+                const response = await fetch("{{url_for('user.CheckBoxRoute')}}", {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+                const data = await response.json();
+                document.getElementById('input').style.display = 'none';
+                document.getElementById("label").style.display = 'block'
+                document.getElementById('output').innerText = data.result;
+            }
+        </script>
+        {% endblock %}
+    </body>
+</html>

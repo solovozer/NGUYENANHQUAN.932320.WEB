@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}Controls{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Controls</h1>
+        <ul>
+            <li><a href="{{url_for('user.TextBoxRoute')}}" class="hlink-clean font-blue">TextBox</a></li>
+            <li><a href="{{url_for('user.TextAreaRoute')}}" class="hlink-clean font-blue">TextArea</a></li>
+            <li><a href="{{url_for('user.CheckBoxRoute')}}"class="hlink-clean font-blue">CheckBox</a></li>
+            <li><a href="{{url_for('user.RadioRoute')}}"class="hlink-clean font-blue">Radio</a></li>
+            <li><a href="{{url_for('user.DropDownRoute')}}"class="hlink-clean font-blue">DropDownList</a></li>
+            <li><a href="{{url_for('user.ListBoxRoute')}}"class="hlink-clean font-blue">ListBox</a></li>
+        </ul>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}Drop-down List{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Drop-down List</h1>
+        <div class="flex-col">
+            <form id="input">
+                {{ form.Months.label(class="bold pad") }} <br>
+                {{ form.Months(class="width-sm height-xs padding-lxs") }} <br>
+                <button type="submit" class="margin-txs">Submit</button>
+            </form>
+            <div class="flex-row gap-s center-self-h">
+                <span id="label" class="bold">Month</span>  
+                <span id="output" ></span>
+            </div>
+        </div>
+        <script>
+            document.getElementById("label").style.display = 'none'
+            document.getElementById("input").onsubmit = async (e) => {
+                e.preventDefault()
+                const formData = new FormData(e.target);
+                const response = await fetch("{{url_for('user.DropDownRoute')}}", {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+                const data = await response.json();
+                document.getElementById('input').style.display = 'none';
+                document.getElementById("label").style.display = 'block'
+                document.getElementById('output').innerText = data.result;
+            }
+        </script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}Sign up{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+            <h1>Sign up</h1>
+            <form method="POST">
+                {{ form.hidden_tag() }}
+                <div id="page-1">
+                    <div class="margin-bxs">
+                        {{form.firstname.label(class="bold margin-bxxs font-size-s")}} <br>
+                        {{form.firstname(class="width-m")}} <br>
+                    </div>
+                    <div class="margin-bxs">
+                        {{form.lastname.label(class="bold margin-bxxs font-size-s")}} <br>
+                        {{form.lastname(class="width-m")}} <br>
+                    </div>
+
+                    <div class="margin-bxs">
+                        <span class="bold margin-bxxs font-size-s">Birthday</span> <br>
+                        {{form.day(class="width-s")}} {{form.month(class="width-xsp")}} {{form.year(class="width-s")}} <br>    
+                    </div>
+
+                    <div class="margin-bxs">
+                        {{form.gender.label(class="bold margin-txs font-size-s")}} <br>
+                        {% for g in form.gender %}
+                            <div>
+                                {{ g() }} {{ g.label(class="margin-bxxs font-size-s") }}
+                            </div>
+                        {% endfor %}
+                    </div>
+                    <button type="submit" class="display-iblock bg-blue font-very-white width-sp height-xs border-round" onclick="showPage2()">Sign up</button>
+                </div>
+                <div id="page-2">
+                    <div class="margin-bxs">
+                        {{form.email.label(class="bold margin-bxxs font-size-s")}} <br>
+                        {{form.email(class="width-m")}} <br>    
+                    </div>
+                    <div class="margin-bxs">
+                        {{form.password.label(class="bold margin-bxxs font-size-s")}} <br>
+                        {{form.password(class="width-m")}} <br>
+                    </div>
+                    <div class="margin-bxs">
+                        {{form.confirmpassword.label(class="bold margin-bxxs font-size-s")}} <br>
+                        {{form.confirmpassword(class="width-m")}} <br>  
+                    </div>
+                    <button type="submit" class="display-iblock bg-blue font-very-white width-sp height-xs border-round">Sign up</button>
+                </div>
+                
+            </form>
+
+            <script>
+                document.getElementById("page-1").style.display = 'block';
+                document.getElementById("page-2").style.display = 'none';
+                function showPage2() {
+                    const inputs = document.getElementById('page-1').querySelectorAll('input');                    
+                    let allValid = true;
+                    inputs.forEach(input => {
+                        if (!input.checkValidity()) {
+                            input.reportValidity(); 
+                            allValid = false;
+                        }
+                    });
+
+                    if (allValid) {
+                        document.getElementById("page-1").style.display = 'none';
+                        document.getElementById("page-2").style.display = 'block';
+                    }
+
+                }         
+            </script>
+        {% endblock %}
+    </body>
+</html>

@@ -1,17 +1,17 @@
-from flask import Flask, render_template, request
+from flask import Flask, redirect, render_template
+from blueprints import ConnectRoutings
 
 app = Flask(__name__)
+app.config['SECRET_KEY'] = '123456'
+ConnectRoutings(app)
 
-@app.route('/about', methods=['GET', 'POST'])
-def calculate():
-    result = None
-    if request.method == 'POST':
-        num1 = request.form.get('num1', type=int)
-        num2 = request.form.get('num2', type=int)
-        result = num1 + num2
-    
-    # Always render the same template
-    return render_template('about.html', result=result)
+@app.route('/')
+def startapp():
+    return redirect('/Index')
+
+@app.route('/Index')
+def index():
+    return render_template('index.html')   
 
 if __name__ == '__main__':
     app.run(debug=True)

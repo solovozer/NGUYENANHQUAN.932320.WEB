@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}TextArea{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Text Area</h1>
+        <div class="flex-col">
+            <form id="text">
+                {{form.hidden_tag()}}
+                {{form.text.label(class="bold margin-bxxs")}} <br>
+                {{form.text(id="text", class="margin-bxs display-iblock wrap width-m height-m")}} <br>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="flex-row gap-s center-self-h">
+                <span id="label" class="bold">Text</span>  
+                <span id="output" class="display-iblock wrap" style="width: 400px;"></span>
+            </div>
+        </div>
+        <script>
+            document.getElementById("label").style.display = 'none'
+            document.getElementById("text").onsubmit = async (e) => {
+                e.preventDefault()
+                const formData = new FormData(e.target);
+                const response = await fetch("{{url_for('user.TextAreaRoute')}}", {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-Requested-With': 'XMLHttpRequest'
+                    }
+                });
+                const data = await response.json();
+                document.getElementById('text').style.display = 'none';
+                document.getElementById("label").style.display = 'block'
+                document.getElementById('output').innerText = data.result;
+            }
+        </script>
+        {% endblock %}
+    </body>
+</html>

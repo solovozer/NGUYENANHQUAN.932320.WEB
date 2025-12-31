@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block title %}Reset password{% endblock %}
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body>
+        {% block content %}
+        <h1>Reset your password</h1>
+        <form id="page-1">
+            <div class="margin-bxs">
+                {{form.email.label(class="bold margin-bxxs font-size-s")}} <br>
+                {{form.email(class="width-m")}} <br>    
+            </div>
+            <button type="button" onclick="sendCode()" class="bg-blue font-very-white width-spp height-xs border-round">Send me a code</button> 
+            <button type="button" onclick="sendCode()" class="width-spp height-xs border-round">I have a code</button>
+        </form>
+        <form id="page-2" class="display-none">
+            <div class="margin-bxs">
+                {{form.code.label(class="bold margin-bxxs font-size-s")}} <br>
+                {{form.code(class="width-m", id="input")}} <br>    
+            </div>
+            <button type="submit">Verify</button>
+            <div id="hint">For convenience the code is {{rightcode}}</div>
+
+        </form>
+
+        <script>
+            const CORRECT_CODE = "{{rightcode}}"
+            const input = document.getElementById("code-input");
+            input.addEventListener("input", () => {
+                if (input.value === CORRECT_CODE) {
+                    input.style.backgroundColor = "white";
+                } else {
+                    input.style.backgroundColor = "blue";
+                }
+            });
+            async function sendCode() {
+                const form = document.getElementById("page-1");
+                const formData = new FormData(form);
+                formData.append("action", "send_code");
+
+                const response = await fetch("{{ url_for('login.ResetPassword') }}", {
+                    method: "POST",
+                    body: formData,
+                    headers: { "X-Requested-With": "XMLHttpRequest" }
+                });
+
+                const data = await response.json();
+
+                form.style.display = "none";
+                document.getElementById("page-2").style.display = "block";
+            }
+
+            document.getElementById("page-2").onsubmit = async (e) => {
+                e.preventDefault();
+
+                const formData = new FormData(e.target);
+                formData.append("action", "verify_code");
+
+                const response = await fetch("{{ url_for('login.ResetPassword') }}", {
+                    method: "POST",
+                    body: formData,
+                    headers: { "X-Requested-With": "XMLHttpRequest" }
+                });
+
+                const data = await response.json();
+
+                db1 = document.getElementById("debug1").style.display
+                db2 = document.getElementById("debug2").style.display
+                if (data) {
+                    console.log("Successfully changed password!")
+                } else {
+                    console.log("Wrong code lmao!")
+                }
+            };
+        </script>
+
+        {% endblock %}
+    </body>
+</html>
