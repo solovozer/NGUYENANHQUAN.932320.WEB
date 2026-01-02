@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}Details{% endblock %}
+
+{% block content %}
+    <h1 class="margin-b-0 bold-sp">Details</h1>
+    <h3 class="margin-txxs bold-s">Hospital</h3>
+    <hr>
+    <div class=" padding-lm margin-bxs font-size-s">
+        <div class="flex-row gap-s">
+            <div class="width-xsm text-right"> {{data.name.label(class="bold")}}</div>
+            <div class="text-left">{{data.name.data}}</div>
+        </div>
+        <div class="flex-row gap-s">
+            <div class="width-xsm text-right bold">{{data.address.label(class="bold")}}</div>
+            <div class="text-left">{{data.address.data}}</div>            
+        </div>
+        <div class="flex-row gap-s">
+            <div class="width-xsm text-right bold">{{data.phone.label(class="bold")}}</div>
+            <div class="text-left">{{data.phone.data}}</div>
+        </div>
+    </div>
+    <div margin-0 margin-bxs>
+        <a href="{{url_for('hospital.EditHospital', id = data.id.data)}}" class="hlink-clean font-blue">Edit</a> | 
+        <a href="{{url_for('hospital.IndexHospital')}}" class="hlink-clean font-blue">Back to List</a>
+    </div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <h1 class="margin-bxxs">Index</h1>
+    <a href="{{url_for('doctor.CreateDoctor')}}" class="hlink-clean font-blue">Create New</a>
+    <table class="width-full font-size-s margin-txs border-collapse">
+        <thead class="width-full border-bxs-s-black">
+            <tr class="width-full text-left">
+                <th class="bold font-size-s padding-lxs width-sm">Name</th>
+                <th class="bold font-size-s padding-lxs width-sm">Specialty</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in list %}
+            <tr>
+                <td class="padding-lxs">{{entry.name}}</td>
+                <td class="padding-lxs">{{entry.specialty}}</td>
+                <td class="padding-lxs">
+                    <ul class="flex-row ls-none ">
+                        <li><a href="{{url_for('doctor.EditDoctor', id=entry.id)}}" class="hlink-clean color-blue">Edit</a></li> &nbsp;|&nbsp;
+                        <li><a href="{{url_for('doctor.DetailsDoctor', id=entry.id)}}" class="hlink-clean color-blue wrap">Details</a></li> &nbsp;|&nbsp;
+                        <li>
+                            <form method="post" action="{{url_for('doctor.DeleteDoctor', id=entry.id)}}">
+                                <button style="background:none; border:none; color:blue; cursor:pointer; padding:0;">Delete</button>
+                            </form>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

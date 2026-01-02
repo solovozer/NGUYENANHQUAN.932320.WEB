@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    <h1 class="margin-b-0 bold-sp">Create</h1>
+    <h3 class="margin-txxs bold-s">Hospital</h3>
+    <hr>
+    <form method="POST" class="font-size-s margin-ts margin-bxs">
+        {{ form.hidden_tag() }}
+        <div class="margin-bxs">
+            {{form.name.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.name(class="width-m")}} <br>
+        </div>
+        <div class="margin-bxs">
+            {{form.address.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.address(class="width-m")}} <br>
+        </div>
+        <div class="margin-bxs">
+            {{form.phone.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.phone(class="width-m")}} <br>
+        </div>
+        <button type="submit" class="bg-white border-xs-s-black width-xsp height-xs">Create</button>
+    </form>
+    <div class="margin-0 margin-bxs">
+        <a href="{{url_for('hospital.IndexHospital')}}" class="hlink-clean font-blue">Back to List</a>
+    </div>
+{% endblock %}
