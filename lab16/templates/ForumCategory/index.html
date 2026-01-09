@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+    <h1 class="margin-bxxs">Index</h1>
+    <div id="non-empty-form">
+        <a href="{{url_for('lab.CreateLab')}}" class="hlink-clean font-blue">Create New</a>
+        <table class="width-full font-size-s margin-txs border-collapse">
+            <thead class="width-full border-bxs-s-black">
+                <tr class="width-full text-left">
+                    <th class="bold font-size-s padding-lxs width-sm">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in list %}
+                <tr>
+                    <td class="padding-lxs">{{entry.name}}</td>
+                    <td class="padding-lxs">{{entry.address}}</td>
+                    <td class="padding-lxs">
+                        <ul class="flex-row ls-none ">
+                            <li><a href="{{url_for('lab.EditLab', id=entry.id)}}" class="hlink-clean color-blue">Edit</a></li> &nbsp;|&nbsp;
+                            <li><a href="{{url_for('lab.DetailsLab', id=entry.id)}}" class="hlink-clean color-blue wrap">Details</a></li> &nbsp;|&nbsp;
+                            <li>
+                                <form method="post" action="{{url_for('lab.DeleteLab', id=entry.id)}}">
+                                    <button style="background:none; border:none; color:blue; cursor:pointer; padding:0;">Delete</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div id="empty-form">
+        <h1>Forum</h1>
+        <div class="bg-gray margin-bxs width-full padding-xs">
+            <a href="#" class="hlink-clean font-blue">Create new category</a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}Details{% endblock %}
+
+{% block content %}
+    <h1 class="margin-b-0 bold-sp">Details</h1>
+    <h3 class="margin-txxs bold-s">Lab</h3>
+    <hr>
+    <div class=" padding-lm margin-bxs font-size-s">
+        <div class="flex-row gap-s">
+            <div class="width-xsm text-right"> {{data.name.label(class="bold")}}</div>
+            <div class="text-left">{{data.name.data}}</div>
+        </div>
+    </div>
+    <div margin-0 margin-bxs>
+        <a href="#" class="hlink-clean font-blue">Edit</a> | 
+        <a href="#" class="hlink-clean font-blue">Back to List</a>
+    </div>
+{% endblock %}

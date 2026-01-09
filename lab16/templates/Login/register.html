@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}Create{% endblock %}
+
+{% block content %}
+    <h1 class="margin-b-0 bold-sp">Register</h1>
+    <h3 class="margin-txxs bold-s">Create a new account</h3>
+    <hr>
+    {% if form.errors %}
+        <div class="error-summary">
+            <ul style="color: #b0413e; list-style-type: disc; margin-bottom: 20px;">
+                {% for field, errors in form.errors.items() %}
+                    {% for error in errors %}
+                        <li>{{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    <form method="POST" class="font-size-s margin-ts margin-bxs" novalidate>
+        {{ form.hidden_tag() }}
+        <div class="margin-bxs">
+            {{form.email.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.email(class="width-m")}} <br>
+            {% if form.email.errors %}
+                <span class="field-error">{{ form.email.errors[0] }}</span>
+            {% endif %}
+        </div>
+        <div class="margin-bxs">
+            {{form.password.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.password(class="width-m")}} <br>
+            {% if form.password.errors %}
+                <span class="field-error">{{ form.password.errors[0] }}</span>
+            {% endif %}
+        </div>
+        <div class="margin-bxs">
+            {{form.confirmpassword.label(class="bold margin-bxxs font-size-s")}} <br>
+            {{form.confirmpassword(class="width-m")}} <br>
+            {% if form.confirmpassword.errors %}
+                <span class="field-error">{{ form.confirmpassword.errors[0] }}</span>
+            {% endif %}
+        </div>
+        <button type="submit" class="bg-white border-xs-s-black width-xsp height-xs">Register</button>
+    </form>
+{% endblock %}

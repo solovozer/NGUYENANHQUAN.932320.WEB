@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %} - Backend6</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <style>
+            [data-logged-in = "true"] .user {display: block} 
+            [data-logged-in = "true"] .guest {display: none}
+            [data-logged-in = "false"] .user {display: none} 
+            [data-logged-in = "false"] .guest {display: block}
+
+        </style>
+    </head>
+    <body class="margin-0">
+        <nav>
+            <div class="flex-row bg-black height-s center-vh">
+                <h3 class="font-white padding-ls bold flex-row center-self-v">Backend6</h4>
+                <div class="flex-row flex-grow justify-between">
+                    <ul class="flex-row ls-none center-vh gap-s">
+                        <li><a href="#" class="hlink-clean font-white font-size-s">Blog</a></li>
+                        <li><a href="{{url_for('Mockups')}}" class="hlink-clean font-white font-size-s">Mockups</a></li>
+                    </ul>
+                    <ul id="login-nav" class="flex-row ls-none center-vh gap-s text-right padding-lrs">
+                        <li class="user">{{login}}</li>
+                        <li class="user"><a href="#" class="hlink-clean font-white font-size-s">Log out</a></li>
+                        <li class="guest"><a href="{{url_for('login.RegisterRoute')}}" class="hlink-clean font-white font-size-s">Register</a></li>
+                        <li class="guest"><a href="{{url_for('login.LoginRoute')}}" class="hlink-clean font-white font-size-s">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="padding-lrs">
+            {% block content %}{% endblock %}
+            <hr>
+            <span>©2026 - Backend6</span>
+        </main>
+        <script>
+                const nav = document.getElementById('login-nav');
+                nav.dataset.loggedIn = "{{login}}" != "" ? "true" : "false";
+        </script>
+    </body>
+</html>
